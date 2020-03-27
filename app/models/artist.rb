@@ -1,8 +1,10 @@
+require 'pry'
 class Artist < ActiveRecord::Base
   has_many :songs
   has_many :genres, through: :songs
   
   def get_first_song
+    binding.pry
     self.songs.first
   end
 
