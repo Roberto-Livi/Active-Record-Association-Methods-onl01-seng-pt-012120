@@ -19,3 +19,18 @@ mj.songs << thriller
 
 pop.songs << thriller
 rap.songs << hotline_bling
+
+blink = Song.create(:name=>'Blink')
+ice = Song.create(:name=>'Ice')
+
+rock = Genre.create(:name=>'Rock')
+hop_scotch = Genre.create(:name=>'Hop Scotch')
+
+blink.artist = drake
+ice.artist = mj
+
+drake.songs << blink
+mj.songs << ice
+
+hop_scotch.songs << ice
+rock.songs << blink
